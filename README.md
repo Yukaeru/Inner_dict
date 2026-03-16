@@ -34,3 +34,8 @@ for token in nc
 ```
 
 token.morph.get("Reading") はリストを返すので [0] で取得し、読みがない場合は token.text をそのまま使うようにしています。
+
+# 課題
+てにおは を取り除けていない単語が割とある。      
+
+
