@@ -121,4 +121,4 @@ if __name__ == "__main__":
 
         builder.analyze_text(content)
 
-    builder.save_ime_dict("company_dict.txt", min_freq=1)
+    builder.save_ime_dict("company_dict_1.txt", min_freq=1)

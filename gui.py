@@ -82,7 +82,7 @@ class App(tk.Tk):
         # 出力ファイル名
         tk.Label(cfg_frame, text="出力ファイル名",
                  bg=BG, fg=MUTED, font=("Helvetica Neue", 10)).grid(row=0, column=2, sticky="w")
-        self.out_var = tk.StringVar(value="company_dict.txt")
+        self.out_var = tk.StringVar(value="company_dict_1.txt")
         tk.Entry(cfg_frame, textvariable=self.out_var, width=22,
                  bg=PANEL, fg=FG, insertbackground=FG,
                  relief="flat", font=("Helvetica Neue", 11)).grid(row=0, column=3, padx=(8, 0))
@@ -188,7 +188,7 @@ class App(tk.Tk):
                     continue
                 builder.analyze_text(content)
 
-            out_file = self.out_var.get() or "company_dict.txt"
+            out_file = self.out_var.get() or "company_dict_1.txt"
             builder.save_ime_dict(out_file, min_freq=self.min_freq.get())
 
             builtins.print = orig_print
