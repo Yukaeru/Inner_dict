@@ -105,7 +105,7 @@ class CompanyDictionaryBuilder:
 if __name__ == "__main__":
     builder = CompanyDictionaryBuilder()
 
-    target_files = ["curriculum_map.pdf", "project_notes.csv"]
+    target_files = ["note_hydrodynamics.pdf", "project_notes.csv"]
 
     for file in target_files:
         if not os.path.exists(file):
